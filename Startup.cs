@@ -9,6 +9,8 @@ using CommanderGQL.GraphQL;
 using GraphiQl;
 using GraphQL.Server.Ui.Voyager;
 using Microsoft.Extensions.Logging;
+using CommanderGQL.GraphQL.Platforms;
+using CommanderGQL.GraphQL.Commands;
 
 namespace CommanderGQL
 {
@@ -35,7 +37,12 @@ namespace CommanderGQL
         .AddLogging(builder => builder.AddConsole())
         .AddGraphQLServer()
         .AddQueryType<Query>()
-        .AddProjections();
+        .AddType<PlatformType>()
+        .AddType<CommandType>()
+        // .AddProjections()
+        .AddFiltering()
+        .AddSorting()
+        ;
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
