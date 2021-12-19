@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "akyhc4I3JYTYYQ+kuyr1+YqUo+99BzJoulFQZyrZb/7ycMIPzHpBlz0FkvIb5kIw4ZteHZaM9C6RUvRj4GIqAw==",
+  "dgSpecHash": "njMkHonu6eaUftKTRGkspg6N+nPgv1Atcl6pD/ojy6oIY7fZ+baGOWUo8ZH1cq1sj4S2K1BnQ1tnbuK0twn4dQ==",
   "success": true,
   "projectFilePath": "/Users/cesarl/code/dotnet/CommanderGQL/CommanderGQL.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/cesarl/.nuget/packages/greendonut/11.3.8/greendonut.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate/11.3.8/hotchocolate.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.abstractions/11.3.8/hotchocolate.abstractions.11.3.8.nupkg.sha512",
+    "/Users/cesarl/.nuget/packages/hotchocolate.aspnetcore/11.3.8/hotchocolate.aspnetcore.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.data/11.3.8/hotchocolate.data.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.data.entityframework/11.3.8/hotchocolate.data.entityframework.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.execution/11.3.8/hotchocolate.execution.11.3.8.nupkg.sha512",
@@ -21,6 +22,7 @@
     "/Users/cesarl/.nuget/packages/hotchocolate.types/11.3.8/hotchocolate.types.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.types.cursorpagination/11.3.8/hotchocolate.types.cursorpagination.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.types.offsetpagination/11.3.8/hotchocolate.types.offsetpagination.11.3.8.nupkg.sha512",
+    "/Users/cesarl/.nuget/packages/hotchocolate.types.scalars.upload/11.3.8/hotchocolate.types.scalars.upload.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.utilities/11.3.8/hotchocolate.utilities.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.utilities.introspection/11.3.8/hotchocolate.utilities.introspection.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate.validation/11.3.8/hotchocolate.validation.11.3.8.nupkg.sha512",

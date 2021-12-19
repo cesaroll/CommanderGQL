@@ -3,7 +3,7 @@ using CommanderGQL.Data;
 using CommanderGQL.Models;
 using HotChocolate;
 
-namespace CommandeGQL.GraphQL
+namespace CommanderGQL.GraphQL
 {
   public class Query
   {

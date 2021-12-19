@@ -42,7 +42,7 @@
               "target": "Package",
               "version": "[4.4.1, )"
             },
-            "HotChocolate": {
+            "HotChocolate.AspNetCore": {
               "target": "Package",
               "version": "[11.3.8, )"
             },
