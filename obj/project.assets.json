@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "GraphiQL/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "3.1.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/GraphiQL.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/GraphiQL.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "GraphQL.Server.Ui.Voyager/4.4.1": {
         "type": "package",
         "compile": {
@@ -556,6 +571,36 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/Microsoft.Extensions.DiagnosticAdapter.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Embedded/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
         }
       },
       "Microsoft.Extensions.Logging/5.0.0": {
@@ -1759,6 +1804,24 @@
     }
   },
   "libraries": {
+    "GraphiQL/2.0.0": {
+      "sha512": "wUUzFiZrXZWfxO6EwrgPJrPG4RhHHRl4COZlRdQ7tfdRNgldalqYWQlsISgwBMdaoLVXi5looSP7AgJ8mT6CQQ==",
+      "type": "package",
+      "path": "graphiql/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "graphiql.2.0.0.nupkg.sha512",
+        "graphiql.nuspec",
+        "lib/netcoreapp3.0/GraphiQL.dll",
+        "lib/netcoreapp3.0/GraphiQL.pdb",
+        "lib/netcoreapp3.1/GraphiQL.dll",
+        "lib/netcoreapp3.1/GraphiQL.pdb",
+        "lib/netstandard2.0/GraphiQL.dll",
+        "lib/netstandard2.0/GraphiQL.pdb",
+        "logo_128_128.png"
+      ]
+    },
     "GraphQL.Server.Ui.Voyager/4.4.1": {
       "sha512": "zYQoqmtA1Py4bRUdOH/afSsgU5iMsGAZ/vDRbh3ullkt3WcktUFZ3U1yTLqWhvQU2/psxj4ZmGhwd+GOKpf38g==",
       "type": "package",
@@ -2462,6 +2525,43 @@
         "lib/netstandard2.0/Microsoft.Extensions.DiagnosticAdapter.xml",
         "microsoft.extensions.diagnosticadapter.3.1.4.nupkg.sha512",
         "microsoft.extensions.diagnosticadapter.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/3.1.1": {
+      "sha512": "V9WqFEKiUygbsNB3JUMUUJAoTlDxNqBwfybZTF7RbFCgbooFNyCscBOdiciomA785wiRoX/Uy/WIea9wzPBPgQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.3.1.1.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Embedded/3.1.1": {
+      "sha512": "+yygkjo94EkMggtsBkj/W3/OR/QTXrP+iGSrz3MkJJsd/lRJ3PrENeEkOowfqCAKg/U0AMJroAqI7U4g7i/+9w==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.embedded/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.props",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "microsoft.extensions.fileproviders.embedded.3.1.1.nupkg.sha512",
+        "microsoft.extensions.fileproviders.embedded.nuspec",
+        "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
       ]
     },
     "Microsoft.Extensions.Logging/5.0.0": {
@@ -6178,7 +6278,8 @@
       "HotChocolate.AspNetCore >= 11.3.8",
       "HotChocolate.Data.EntityFramework >= 11.3.8",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.13",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13",
+      "graphiql >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -6239,6 +6340,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[5.0.13, )"
+          },
+          "graphiql": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

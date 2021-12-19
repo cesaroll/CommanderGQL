@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using CommanderGQL.Data;
 using CommanderGQL.GraphQL;
+using GraphiQl;
+using GraphQL.Server.Ui.Voyager;
 
 namespace CommanderGQL
 {
@@ -40,12 +42,17 @@ namespace CommanderGQL
         app.UseDeveloperExceptionPage();
       }
 
+      app.UseGraphiQl();
+
       app.UseRouting();
 
       app.UseEndpoints(endpoints =>
       {
         endpoints.MapGraphQL();
       });
+
+      app.UseGraphQLVoyager(new GraphQLVoyagerOptions());
+
     }
   }
 }
