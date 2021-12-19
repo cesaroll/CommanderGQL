@@ -37,6 +37,7 @@ namespace CommanderGQL
         .AddLogging(builder => builder.AddConsole())
         .AddGraphQLServer()
         .AddQueryType<Query>()
+        .AddMutationType<Mutation>()
         .AddType<PlatformType>()
         .AddType<CommandType>()
         // .AddProjections()
