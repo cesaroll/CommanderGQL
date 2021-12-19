@@ -27,7 +27,7 @@ namespace CommanderGQL
     {
       services.AddPooledDbContextFactory<AppDbContext>(
         opt => opt
-          //.UseLoggerFactory(loggerFactory)
+          .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
           .UseSqlServer(Configuration.GetConnectionString("CommandConStr"))
       );
 
