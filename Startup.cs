@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using CommanderGQL.Data;
 using CommanderGQL.GraphQL;
-using GraphiQl;
+// using GraphiQl;
 using GraphQL.Server.Ui.Voyager;
 using Microsoft.Extensions.Logging;
 using CommanderGQL.GraphQL.Platforms;
@@ -38,11 +38,13 @@ namespace CommanderGQL
         .AddGraphQLServer()
         .AddQueryType<Query>()
         .AddMutationType<Mutation>()
+        .AddSubscriptionType<Subscription>()
         .AddType<PlatformType>()
         .AddType<CommandType>()
         // .AddProjections()
         .AddFiltering()
         .AddSorting()
+        .AddInMemorySubscriptions()
         ;
     }
 
@@ -54,7 +56,9 @@ namespace CommanderGQL
         app.UseDeveloperExceptionPage();
       }
 
-      app.UseGraphiQl();
+      //app.UseGraphiQl();
+
+      app.UseWebSockets();
 
       app.UseRouting();
 

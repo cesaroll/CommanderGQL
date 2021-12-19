@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "IZoIQAojxv62bO3s6GV/XSvbm6Bv/ayJiKA37zCLyHtNMIjmMgsobQ6WClcIe65fOLF5bMX60uOtYzrDItcKRQ==",
+  "dgSpecHash": "KnoHlNfsFp8iwBlu0XeGSHshCMYp7xRFI9I4nn5o3va+zcowjEcyUZN0HrkVVSPiHXQcZ4pUtjd00I4u6GvRgA==",
   "success": true,
   "projectFilePath": "/Users/cesarl/code/dotnet/CommanderGQL/CommanderGQL.csproj",
   "expectedPackageFiles": [
-    "/Users/cesarl/.nuget/packages/graphiql/2.0.0/graphiql.2.0.0.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/graphql.server.ui.voyager/4.4.1/graphql.server.ui.voyager.4.4.1.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/greendonut/11.3.8/greendonut.11.3.8.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/hotchocolate/11.3.8/hotchocolate.11.3.8.nupkg.sha512",
@@ -46,8 +45,6 @@
     "/Users/cesarl/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/microsoft.extensions.diagnosticadapter/3.1.4/microsoft.extensions.diagnosticadapter.3.1.4.nupkg.sha512",
-    "/Users/cesarl/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.1/microsoft.extensions.fileproviders.abstractions.3.1.1.nupkg.sha512",
-    "/Users/cesarl/.nuget/packages/microsoft.extensions.fileproviders.embedded/3.1.1/microsoft.extensions.fileproviders.embedded.3.1.1.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/Users/cesarl/.nuget/packages/microsoft.extensions.logging.configuration/5.0.0/microsoft.extensions.logging.configuration.5.0.0.nupkg.sha512",
