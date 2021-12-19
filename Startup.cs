@@ -8,6 +8,7 @@ using CommanderGQL.Data;
 using CommanderGQL.GraphQL;
 using GraphiQl;
 using GraphQL.Server.Ui.Voyager;
+using Microsoft.Extensions.Logging;
 
 namespace CommanderGQL
 {
@@ -24,12 +25,14 @@ namespace CommanderGQL
     // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddDbContext<AppDbContext>(
-        opt => opt.
-          UseSqlServer(Configuration.GetConnectionString("CommandConStr"))
+      services.AddPooledDbContextFactory<AppDbContext>(
+        opt => opt
+          //.UseLoggerFactory(loggerFactory)
+          .UseSqlServer(Configuration.GetConnectionString("CommandConStr"))
       );
 
       services
+        .AddLogging(builder => builder.AddConsole())
         .AddGraphQLServer()
         .AddQueryType<Query>();
     }
