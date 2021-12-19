@@ -51,7 +51,11 @@ namespace CommanderGQL
         endpoints.MapGraphQL();
       });
 
-      app.UseGraphQLVoyager(new GraphQLVoyagerOptions());
+      app.UseGraphQLVoyager(new GraphQLVoyagerOptions()
+      {
+        GraphQLEndPoint = "/graphql",
+        Path = "/graphql-voyager"
+      });
 
     }
   }
