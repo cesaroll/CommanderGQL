@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/azure-sql-edge
+    container_name: azuresqledge
+    environment:
+      - ACCEPT_EULA=1
+      - MSSQL_SA_PASSWORD=pa55w0rd!
+    volumes:
+      - ./data:/var/opt/mssql/data
+      - ./log:/var/opt/mssql/log
+    ports:
+      - "1433:1433"
